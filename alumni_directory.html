@@ -151,9 +151,13 @@
                 <label for="passing-year">Passing Year:</label>
                 <select id="passing-year" onchange="filterAlumni()">
                     <option value="all">All</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
                 </select>
 
                 <label for="field-of-study">Field of Study:</label>
@@ -162,6 +166,10 @@
                     <option value="Computer Science">Computer Science</option>
                     <option value="Mechanical">Mechanical</option>
                     <option value="Electrical">Electrical</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Data Science">Data Science</option>
                 </select>
             </div>
 
@@ -176,7 +184,11 @@
                 { name: 'Jane Smith', passingYear: 2021, fieldOfStudy: 'Mechanical', email: 'jane@example.com' },
                 { name: 'Mike Johnson', passingYear: 2022, fieldOfStudy: 'Electrical', email: 'mike@example.com' },
                 { name: 'Sara Lee', passingYear: 2020, fieldOfStudy: 'Computer Science', email: 'sara@example.com' },
-                { name: 'Tom Brown', passingYear: 2021, fieldOfStudy: 'Mechanical', email: 'tom@example.com' }
+                { name: 'Ayush Patel', passingYear: 2024, fieldOfStudy: 'Mechanical', email: 'tom@example.com' },
+                { name: 'Navneet Vishwakarma', passingYear: 2024, fieldOfStudy: 'Mechanical', email: 'tom@example.com' },
+                { name: 'Chetan Sen', passingYear: 2021, fieldOfStudy: 'Artificial Intelligence', email: 'tom@example.com' },
+                { name: 'Frank Doe', passingYear: 2019, fieldOfStudy: 'Machine Learning', email: 'tom@example.com' },
+                { name: 'Tom Brown', passingYear: 2023, fieldOfStudy: 'Cyber Security', email: 'tom@example.com' },
             ];
 
             function filterAlumni() {
