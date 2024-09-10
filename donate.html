@@ -1,22 +1,17 @@
-<!-- ==Write Code inside main and if make "section" then use class="user_section"== -->
-<!-- ==if using div use class="container"== -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="stylesheet" href="/styles/index.css">
-  <script type="text/javascript" src="/scripts/app.js" defer></script>
-  <link rel="stylesheet" href="swapper.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/Ayush/CSS/style.css">
+  <link rel="stylesheet" href="/Ayush/CSS/donation.css">
+  <script type="text/javascript" src="app.js" defer></script>
 </head>
 
 <body>
-  <!-- ============common navbar to all=========== -->
+   <!-- ============common navbar to all=========== -->
   <nav id="sidebar">
     <ul>
       
@@ -100,98 +95,91 @@
     </ul>
   </nav>
 
+
   <main>
+    <div class="main-content ">
+      <header class="head_er">
+        <h1>Dashboard</h1>
+        <div class="profile">
+          <p>alumni name</p>
+          <img src="004.webp" alt="Profile Picture">
+        </div>
+      </header>
 
-    <div class="_header">
-      <div class="_header-content">
-        <!-- <img src="logo.png" alt="Logo" class="logo"> -->
-        <h1 class="site-name">Stay Connected</h1>
-      </div>
-    </div>
-
-    <section class="hero user_section">
-      <div class="hero-content">
-        <h1>Welcome to the ABC University Association</h1>
-        <p>Our platform offers easy access to networking, career opportunities, and alumni events, helping you stay
-          connected with the college and fellow graduates. Engage in mentorship, explore job openings, and support the
-          college’s initiatives through our secure donation portal. Celebrate the achievements of our alumni and stay
-          updated on upcoming events—all through our user-friendly web and web applications. Join us in strengthening
-          and growing our alumni community. Like this</p>
-        <a href="#ABC_University" class="cta-button">Know More</a>
-      </div>
-      <div class="background-shape"></div>
-      <div class="background-shape background-shape2"></div>
-    </section>
-
-    <section id="get-started user_section" class="get-started">
-      <div class="user_section">
-        <h2>Get Started Today</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nulla magna.</p>
-        <a href="#contact" class="cta-button">Contact Us</a>
-      </div>
-    </section>
-
-    <!-- stories -->
-    <div class="container stories-container">
-      <div class="user_section success-story-heading">
-        <h1>High-Flyers</h1>
-      </div>
-      <div class="swiper">
-        <div class="slider-wrapper">
-          <div class="card-list swiper-wrapper">
-            <div class="card-item swiper-slide">
-              <img class="user-image"
-                src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
-              <h2 class="user-name">Ayush Singh</h2>
-              <p class="user-profession">Software Developer</p>
-              <button class="message-button">Message</button>
+      <section class="cards">
+        <div class="card">
+          <h3>Total Donations</h3>
+          <p>$25,000</p>
+        </div>
+        <div class="card">
+          <h3>Active Projects</h3>
+          <p>8</p>
+        </div>
+        <div class="card">
+          <h3>Registered Users</h3>
+          <p>150</p>
+        </div>
+        <div class="card">
+          <h3>Pending Approvals</h3>
+          <p>4</p>
+        </div>
+      </section>
+      <div class="donate_type">
+        <h2>Recent Projects</h2>
+        <div class="donation-card-container">
+            <div class="donation-card">
+                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
+                <h3>Hospital Management System</h3>
+                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
             </div>
-
-            <div class="card-item swiper-slide">
-              <img class="user-image"
-                src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
-              <h2 class="user-name">Navneet Singh</h2>
-              <p class="user-profession">Game Developer</p>
-              <button class="message-button">Message</button>
+            <div class="donation-card">
+                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
+                <h3>Cultural Fest</h3>
+                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
             </div>
-
-            <div class="card-item swiper-slide">
-              <img class="user-image"
-                src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
-              <h2 class="user-name">Chetan sen</h2>
-              <p class="user-profession">UI/UX Designer</p>
-              <button class="message-button">Message</button>
+            <div class="donation-card">
+                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
+                <h3>Robotics Workshop</h3>
+                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
             </div>
-
-            <div class="card-item swiper-slide">
-              <img class="user-image"
-                src="https://tse3.mm.bing.net/th?id=OIP.iOJ3d7QnoKo7X0GrBQf97gHaHa&pid=Api&P=0&h=180" alt="">
-              <h2 class="user-name">John Uikey</h2>
-              <p class="user-profession">Android Developer</p>
-              <button class="message-button">Message</button>
-            </div>
-          </div>
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-slide-button swiper-button-prev"></div>
-          <div class="swiper-slide-button swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
-    </div>
-
-
-    <!-- upcoming -->
-
-
+      
+      <div class="donate_type">
+        <h2>Upcoming Projects</h2>
+        <div class="donation-card-container">
+            <div class="donation-card">
+                <img src="https://media.istockphoto.com/id/1344779917/vector/medical-center-hospital-building-vector-design.jpg?s=1024x1024&w=is&k=20&c=ojXy3pSmAc3wR8hMkyybmjwQzYYxaAJkCphfYyrCt_0=" alt="Hospital Management System" class="event-image">
+                <h3>Hospital Management System</h3>
+                <p><a href="https://hscprojects.com/hospital-management-system-project/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://hls.harvard.edu/wp-content/uploads/2022/07/Culture-Fest-Image-1-1024x576-1.png" alt="Cultural Fest" class="event-image">
+                <h3>Cultural Fest</h3>
+                <p><a href="https://www.venuereport.com/roundups/22-celebrations-of-culture-from-around-the-world/" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+            <div class="donation-card">
+                <img src="https://techradiance.in/wp-content/uploads/2022/02/3d-render-robots-with-transmission-wheels_1048-5630.png.webp" alt="Robotics Workshop" class="event-image">
+                <h3>Robotics Workshop</h3>
+                <p><a href="https://alison.com/course/diploma-in-robotics?utm_source=bing&utm_medium=cpc&utm_campaign=531498932&utm_content=1352401840036340&utm_term=kwd-84526279420840:loc-90&msclkid=e28b701309391e76566216cdf3913a1b" target="_blank">View Details</a></p>
+                <input type="text" placeholder="Amount">
+                <button>Donate</button>
+            </div>
+        </div>
+      </div>
+      
+      
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/scripts/swaper.js"></script>
 
 </body>
 
