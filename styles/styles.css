@@ -283,7 +283,7 @@ main p{
 .-footer-container{
   /* border: 1px solid var(--line-clr); */
   border-radius: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: min(3em, 15%);
 
   h2, p { margin-top: 1em }
@@ -303,15 +303,16 @@ main p{
   background-color: #c9ccd0;
   color: #fff;
   padding: 50px 0;
+  margin: 20px -28px 0px -28px;
 }
 
-.footer-container {
+/* .footer-container {
   max-width: 1200px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 
 .row {
   display: flex;
@@ -385,6 +386,7 @@ main p{
   padding: 15px 0;
   text-align: center;
   color: #fff;
+  margin: 0px -28px;
 }
 
 .copy-right-sec {
@@ -457,6 +459,7 @@ main p{
 
   #copy-right {
     padding: 10px 0;
+    margin: 0px -28px;
   }
 }
 
