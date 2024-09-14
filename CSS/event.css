@@ -1,0 +1,91 @@
+.cont {
+    margin: auto;
+  }
+
+  .heading_1 {
+    text-align: center;
+    color: #7554ec;
+    font-size: 2rem;
+  }
+
+  body {
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.animated-gradient-underline {
+    position: relative; /* Positioning context for the pseudo-element */
+    display: inline-block; /* Ensures the underline only spans the text */
+    color: #333; /* Text color */
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.animated-gradient-underline::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Positioning the underline */
+    left: 0; /* Start from the left */
+    bottom: 0; /* Position at the bottom of the text */
+    width: 100%; /* Full width of the text */
+    height: 4px; /* Thickness of the underline */
+    background: linear-gradient(90deg, #ff007f, #ff7f00); /* Gradient color */
+    transform: scaleX(0); /* Start with no width */
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.animated-gradient-underline:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+
+
+  .event-category {
+    margin: 20px 0;
+  }
+
+  .event-category h2 {
+    color: #000000;
+    margin-bottom: 2rem;
+  }
+
+  .event-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .event-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .event-card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+  }
+
+  .event-card p {
+    color: #777;
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Keyframe Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

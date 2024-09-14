@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Portal</title>
+  <title>Search Jobs</title>
   <link rel="stylesheet" href="/CSS/style.css">
   <!-- <link rel="stylesheet" href="/Ayush/CSS/user.css"> -->
   <link rel="stylesheet" href="/CSS/jobb.css">
@@ -44,8 +44,8 @@
         </button>
         <ul class="sub-menu">
           <div>
-            <li class="active"><a href="jobb.html">Post Job</a></li>
-            <li class="deactive"><a href="search_job.html">Search Job</a></li>
+            <li class="deactive"><a href="jobb.html">Post Job</a></li>
+            <li class="active"><a href="search_job.html">Search Job</a></li>
             <!-- <li><a href="#">Project</a></li> -->
           </div>
         </ul>
@@ -112,27 +112,18 @@
 
   <main>
      <div>
-    <h1>Job Portal</h1> 
-    <div class="post-job-form">
-        <h2>Post a Job</h2>
-        <form id="job-form">
-            <label for="title">Job Title:</label>
-            <input type="text" id="title" required>
-            
-            <label for="description">Job Description:</label>
-            <textarea id="description" required></textarea>
-            
-            <label for="location">Location:</label>
-            <input type="text" id="location" required>
-            
-            <button type="submit">Post Job</button>
-        </form>
+    <h1>Search Job</h1>
+    
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search jobs...">
+        <button onclick="searchJobs()">Search</button>
+    </div>
+    
+    <div id="job-form">
     </div>
     <div class="cont">
-    
     <div id="job-list" class="job-list">
         </div>
-
     </div>
 </div>
 <footer>
@@ -168,12 +159,106 @@
 <script >
 const jobs = [
     {
-        title: "Software Engineer",
-        description: "Develop and maintain software applications. Experience with JavaScript, HTML, and CSS required.",
-        location: "New York, NY",
-
+        "title": "Software Engineer",
+        "description": "Develop and maintain software applications. Experience with JavaScript, HTML, and CSS required.",
+        "location": "New York, NY"
     },
-];
+    {
+        "title": "Python Developer",
+        "description": "Write and test Python code. Familiarity with Django or Flask is a plus.",
+        "location": "San Francisco, CA"
+    },
+    {
+        "title": "DevOps Engineer",
+        "description": "Manage and automate deployment processes. Experience with AWS and Docker required.",
+        "location": "Austin, TX"
+    },
+    {
+        "title": "Cloud Architect",
+        "description": "Design and implement cloud solutions. Expertise in cloud platforms like AWS or Azure needed.",
+        "location": "Seattle, WA"
+    },
+    {
+        "title": "Cloud Computing Specialist",
+        "description": "Consult on cloud infrastructure and services. Strong knowledge of cloud security practices.",
+        "location": "Boston, MA"
+    },
+    {
+        "title": "Data Scientist",
+        "description": "Analyze and interpret complex data to help companies make decisions. Proficiency in Python and R is required.",
+        "location": "Chicago, IL"
+    },
+    {
+        "title": "Frontend Developer",
+        "description": "Build user-friendly web interfaces. Experience with React or Angular is a plus.",
+        "location": "Los Angeles, CA"
+    },
+    {
+        "title": "Backend Developer",
+        "description": "Develop server-side logic and APIs. Experience with Node.js or Ruby on Rails is preferred.",
+        "location": "Miami, FL"
+    },
+    {
+        "title": "Full Stack Developer",
+        "description": "Work on both front-end and back-end technologies. Proficiency in JavaScript, HTML, CSS, and Node.js is required.",
+        "location": "Austin, TX"
+    },
+    {
+        "title": "Mobile App Developer",
+        "description": "Create mobile applications for iOS and Android. Experience with Swift and Kotlin is a plus.",
+        "location": "Seattle, WA"
+    },
+    {
+        "title": "UX/UI Designer",
+        "description": "Design intuitive user interfaces and enhance user experience. Proficiency in design tools like Sketch or Figma is required.",
+        "location": "San Francisco, CA"
+    },
+    {
+        "title": "Network Engineer",
+        "description": "Design and implement network solutions. Experience with Cisco and Juniper technologies is preferred.",
+        "location": "New York, NY"
+    },
+    {
+        "title": "Cybersecurity Analyst",
+        "description": "Protect an organization's computer systems and networks. Knowledge of security protocols and tools is essential.",
+        "location": "Washington, DC"
+    },
+    {
+        "title": "Database Administrator",
+        "description": "Manage and maintain database systems. Experience with SQL and NoSQL databases is required.",
+        "location": "Chicago, IL"
+    },
+    {
+        "title": "Systems Analyst",
+        "description": "Analyze and improve IT systems. Strong problem-solving skills and knowledge of business processes are required.",
+        "location": "Boston, MA"
+    },
+    {
+        "title": "Technical Support Specialist",
+        "description": "Provide technical assistance and support to users. Strong communication skills are essential.",
+        "location": "Phoenix, AZ"
+    },
+    {
+        "title": "Project Manager",
+        "description": "Oversee projects from inception to completion. Experience with Agile methodologies is a plus.",
+        "location": "Atlanta, GA"
+    },
+    {
+        "title": "Business Analyst",
+        "description": "Analyze business needs and provide solutions. Strong analytical skills and experience with data analysis tools are required.",
+        "location": "Dallas, TX"
+    },
+    {
+        "title": "Game Developer",
+        "description": "Design and develop video games. Proficiency in C# and Unity is preferred.",
+        "location": "Los Angeles, CA"
+    },
+    {
+        "title": "SEO Specialist",
+        "description": "Optimize website content for search engines. Knowledge of SEO tools and analytics is required.",
+        "location": "Miami, FL"
+    }
+]
 
 function displayJobs(jobList) {
     const jobListContainer = document.getElementById('job-list');
@@ -222,6 +307,6 @@ function postJob(event) {
 document.getElementById('job-form').addEventListener('submit', postJob);
 displayJobs(jobs);
 </script>
-
+  
 </body>
 </html>

@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="stylesheet" href="/styles/event.css">
-  <script type="text/javascript" src="/scripts/app.js" defer></script>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/event.css">
+  <script type="text/javascript" src="app.js" defer></script>
   
 </head>
 
 <body>
 
-   <!-- ============common navbar to all=========== -->
-   <nav id="sidebar">
+    <!-- ============common navbar to all=========== -->
+  <nav id="sidebar">
     <ul>
       
       <li>
@@ -24,7 +24,7 @@
         </button>
       </li>
 
-      <li class="active">
+      <li>
         <a href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z"/></svg>
           <span>Home</span>
@@ -47,7 +47,7 @@
         <ul class="sub-menu">
           <div>
             <li><a href="jobb.html">Post Job</a></li>
-            <li><a href="#">Search Job</a></li>
+            <li><a href="search_job.html">Search Job</a></li>
             <!-- <li><a href="#">Project</a></li> -->
           </div>
         </ul>
@@ -63,6 +63,7 @@
           <div>
             <li><a href="Alumni_directory.html">Alumni Directory</a></li>
             <li><a href="#">Connect</a></li>
+            <li><a href="#">Message</a></li>
           </div>
         </ul>
       </li>
@@ -70,13 +71,26 @@
       <li>
         <button onclick=toggleSubMenu(this) class="dropdown-btn">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-60q-63 0-106.5-43.5T330-210q0-52 31-91.5t79-53.5v-85H200v-160H100v-280h280v280H280v80h400v-85q-48-14-79-53.5T570-750q0-63 43.5-106.5T720-900q63 0 106.5 43.5T870-750q0 52-31 91.5T760-605v165H520v85q48 14 79 53.5t31 91.5q0 63-43.5 106.5T480-60Zm240-620q29 0 49.5-20.5T790-750q0-29-20.5-49.5T720-820q-29 0-49.5 20.5T650-750q0 29 20.5 49.5T720-680Zm-540 0h120v-120H180v120Zm300 540q29 0 49.5-20.5T550-210q0-29-20.5-49.5T480-280q-29 0-49.5 20.5T410-210q0 29 20.5 49.5T480-140ZM240-740Zm480-10ZM480-210Z"/></svg>  
-          <span>Success Story</span>
+          <span>Success Stories</span>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
         </button>
         <ul class="sub-menu">
           <div>
-            <li><a href="Alumni_directory.html">Post Success Story</a></li>
-            <li><a href="#">Track Success Story</a></li>
+            <li><a href="post-success-stories.html">Post Success Stories</a></li>
+            <li><a href="track-stories.html">Track Success Stories</a></li>
+          </div>
+        </ul>
+      </li>
+      <li class="active">
+        <button onclick=toggleSubMenu(this) class="dropdown-btn active">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
+          <span>More</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="profile.html" class="deactive">Profile</a></li>
           </div>
         </ul>
       </li>
@@ -87,13 +101,13 @@
           <span>Success Story</span>
         </a>
       </li> -->
-      
+<!--       
       <li>
         <a href="profile.html">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-240v-32q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v32q0 33-23.5 56.5T720-160H240q-33 0-56.5-23.5T160-240Zm80 0h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <span>Profile</span>
+          <span>Other</span>
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 
@@ -101,63 +115,94 @@
   <main>
     
 
-    <section class="user_section">
+    
       <div class="cont">
-        <h1>Events</h1>
+        <center>
+          <h1 class="heading_1 animated-gradient-underline">Events</h1>
+        </center>
         <div class="event-category">
           <h2>Upcoming Events</h2>
           <div class="event-card" onclick="showDetails('upcoming')">
-            <img src="https://via.placeholder.com/300x200" alt="Music Festival">
+            <img src="https://rollingstoneindia.com/wp-content/uploads/2018/01/VH1SS2017_1102_205513_740A9145_AG-e1515503440717-960x461.jpg" alt="Music Festival">
             <h3>Music Festival</h3>
             <p>Date: 2023-12-01</p>
             <p>Join us for a day of music, food, and fun at the annual Music Festival!</p>
           </div>
           <div class="event-card" onclick="showDetails('upcoming')">
-            <img src="https://via.placeholder.com/300x200" alt="Art Exhibition">
+            <img src="https://empirestateplaza.ny.gov/sites/g/files/oee991/files/styles/wide_lead/public/media/2022/03/pic.jpg?h=80e1c9f0&itok=7mp_46VI" alt="Art Exhibition">
             <h3>Art Exhibition</h3>
             <p>Date: 2023-12-15</p>
             <p>Explore stunning artworks from local artists at our Art Exhibition.</p>
           </div>
         </div>
         <div class="event-category">
-          <h2>Open Events</h2>
+          <h2 class="h2_tag">Open Events</h2>
           <div class="event-card onclick="showDetails('open')">
-            <img src="https://via.placeholder.com/300x200" alt="Community Cleanup">
+            <img src="https://sustainablesaratoga.org/wp-content/uploads/2024/02/TeamUp2CleanUp-2024-FB-Event-1536x864.jpg" alt="Community Cleanup">
             <h3>Community Cleanup</h3>
             <p>Date: 2023-11-20</p>
             <p>Help us keep our community clean and beautiful. Join the cleanup!</p>
           </div>
           <div class="event-card" onclick="showDetails('open')">
-            <img src="https://via.placeholder.com/300x200" alt="Tech Meetup">
+            <img src="https://www.codemotion.com/magazine/wp-content/uploads/2020/04/pug-1-896x504.png" alt="Tech Meetup">
             <h3>Tech Meetup</h3>
             <p>Date: 2023-11-25</p>
             <p>Network with tech enthusiasts and learn about the latest trends.</p>
           </div>
         </div>
         <div class="event-category">
-          <h2>Closed Events</h2>
+          <h2 class="h2_tag">Closed Events</h2>
           <div class="event-card" onclick="showDetails('closed')">
-            <img src="https://via.placeholder.com/300x200" alt="Charity Run">
+            <img src="https://donorbox.org/nonprofit-blog/wp-content/uploads/2019/08/organize-a-charity-run-title.jpg" alt="Charity Run">
             <h3>Charity Run</h3>
             <p>Date: 2023-10-10</p>
             <p>Thank you for participating in our Charity Run to support local charities!</p>
           </div>
           <div class="event-card" onclick="showDetails('closed')">
-            <img src="https://via.placeholder.com/300x200" alt="Book Fair">
+            <img src="https://lessonsbysandy.com/wp-content/uploads/2012/11/Slide1-300x150.png" alt="Book Fair">
             <h3>Book Fair</h3>
             <p>Date: 2023-09-15</p>
             <p>Discover new books and meet authors at our annual Book Fair.</p>
           </div>
         </div>
       </div>
-    </section>
+   
 
+  
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h2>Government Engineering College</h2>
+          <p>Address: 123 College Road, City, State, ZIP</p>
+          <p>Contact: (123) 456-7890</p>
+          <p>Email: info@gec.edu</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Twitter</a>
+          <a href="#" class="social-icon">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Government Engineering College. All rights reserved.</p>
+      </div>
+    </footer>
   </main>
   <script>
     function showDetails(eventType) {
       alert(`You clicked on a ${eventType} event!`);
     }
-
   </script>
 </body>
 
