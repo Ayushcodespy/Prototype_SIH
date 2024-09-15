@@ -41,7 +41,7 @@
     font-size: 14px;
 }
 
-.news-article-button{
+.news-article-button {
     border-radius: 4PX;
     padding: 5px;
     background: none;
@@ -49,16 +49,59 @@
     transition: 0.2s ease-in-out;
 }
 
-.news-article-button:hover{
+.news-article-button:hover {
     background: #666;
     color: white;
     font-weight: 500;
 
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1000px) {
 
     .news-article img {
-    height: 250px;
+        height: 250px;
+    }
 }
-}
+
+
+
+/* features styles */
+
+/* Styling the slider */
+#features-slider {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  
+  .feature-slide {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .feature-slide img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .feature-slide h3 {
+    margin: 10px 0;
+  }
+  
+  .feature-slide p {
+    color: #666;
+  }
+
+  
+  .feature-slide .btn:hover {
+    background-color: #0056b3;
+  }
+  

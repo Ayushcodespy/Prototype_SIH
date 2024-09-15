@@ -42,3 +42,38 @@ speed: 9000, // Adjust the speed to control how fast the slides move
   }
 
 });
+
+
+// js for features
+  $(document).ready(function(){
+    $('#features-slider').slick({
+      grabCursor: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      // dots: true,
+      arrows: swiper,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+
+      
+      responsive: [
+        {
+          breakpoint: 1024,  // For tablet size
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,  // For mobile size
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
+
+    });
+  });
